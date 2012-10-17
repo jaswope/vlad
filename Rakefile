@@ -5,6 +5,7 @@ require 'hoe'
 
 Hoe.plugin :seattlerb
 Hoe.plugin :isolate
+Hoe.plugin :gemspec
 
 Hoe.spec 'vlad' do
   self.rubyforge_name = 'hitsquad'
