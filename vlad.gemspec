@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = "vlad"
-  s.version = "2.2.5.20121017153016"
+  s.version = "2.2.5.20121119161245"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ryan Davis", "Eric Hodel", "Wilson Bilkovich"]
-  s.date = "2012-10-17"
+  s.date = "2012-11-19"
   s.description = "Vlad the Deployer is pragmatic application deployment automation,\nwithout mercy. Much like Capistrano, but with 1/10th the\ncomplexity. Vlad integrates seamlessly with Rake, and uses familiar\nand standard tools like ssh and rsync.\n\nImpale your application on the heartless spike of the Deployer."
   s.email = ["ryand-ruby@zenspider.com", "drbrain@segment7.net", "wilson@supremetyrant.com"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "README.txt", "considerations.txt", "doco/deploying-merb-with-vlad.txt", "doco/deploying-sinatra-with-vlad.txt", "doco/faq.txt", "doco/getting_started.txt", "doco/migration.txt", "doco/perforce.txt", "doco/variables.txt"]
@@ -23,18 +23,18 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<rake>, ["~> 0.8"])
+      s.add_runtime_dependency(%q<rake>, [">= 0.8"])
       s.add_runtime_dependency(%q<rake-remote_task>, ["~> 2.0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.10"])
       s.add_development_dependency(%q<hoe>, ["~> 3.1"])
     else
-      s.add_dependency(%q<rake>, ["~> 0.8"])
+      s.add_dependency(%q<rake>, [">= 0.8"])
       s.add_dependency(%q<rake-remote_task>, ["~> 2.0"])
       s.add_dependency(%q<rdoc>, ["~> 3.10"])
       s.add_dependency(%q<hoe>, ["~> 3.1"])
     end
   else
-    s.add_dependency(%q<rake>, ["~> 0.8"])
+    s.add_dependency(%q<rake>, [">= 0.8"])
     s.add_dependency(%q<rake-remote_task>, ["~> 2.0"])
     s.add_dependency(%q<rdoc>, ["~> 3.10"])
     s.add_dependency(%q<hoe>, ["~> 3.1"])
